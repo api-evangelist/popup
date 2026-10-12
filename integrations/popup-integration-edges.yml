@@ -1,0 +1,31 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/popup/integrations
+- https://n8n.io/integrations/popup/
+- https://composio.dev/toolkits/popup
+- https://monid.ai/tools/popup
+checked:
+- https://composio.dev/toolkits/popup
+- https://monid.ai/tools/popup
+- https://n8n.io/integrations/popup/
+- https://zapier.com/apps/popup/integrations
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: klaviyo
+  partner: klaviyo
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/klaviyo/blob/main/openapi/klaviyo-forms-api-openapi.yml
+  contract_reference:
+    repo: klaviyo
+    spec_file: klaviyo-forms-api-openapi.yml
+    value: popup
+    property: FormVersionResponseObjectResource.attributes.form_type
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+templates: []
